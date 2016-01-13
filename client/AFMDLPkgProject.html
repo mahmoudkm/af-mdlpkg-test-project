@@ -1,0 +1,28 @@
+<head>
+  <title>AFMDLPkgProject</title>
+</head>
+
+<body>
+  <h3>AFMDL Test</h3>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <br><br><br><br>
+
+
+  {{#autoForm id="insertItemsForm" type="normal" schema=AdminSchemas.itemsSch}}
+
+      {{> afQuickField name='ItemCode' placeholder="Item Code"}}      
+      {{> afQuickField name='ItemName' placeholder="Item Name"}}
+      {{> afQuickField name='ItemDeliverToHome'}}
+      {{> afQuickField name='memoField'}}
+      
+      <!-- <button type="submit" class="mdl-button mdl-js-button mdl-button         raised mdl-js-ripple-effect">Save</button> -->
+      <button type="submit">Save</button>
+  {{/autoForm}}
+
+
+
+</template>
