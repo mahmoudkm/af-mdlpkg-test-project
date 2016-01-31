@@ -22,8 +22,7 @@ this.AFormMDLTestGlobalObj.itemsSch = new SimpleSchema({
   ItemName: {
     type: String,
     label: "Item Name",
-    optional: true,
-    // placeholder: "Testing..."
+    optional: true    
 
   },
   ItemDeliverToHome: {
