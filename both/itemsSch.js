@@ -39,10 +39,35 @@ this.AFormMDLTestGlobalObj.itemsSch = new SimpleSchema({
       }
     }
   },
+  ItemDeliverExtras: {
+    type: String,
+    label: "Extras?",
+    optional: false,
+    autoform: {
+      type: "select-checkbox",
+      options: function () {
+        return [
+          {label: "AUX Cable", value: 'AUX Cable'},
+          {label: "Wifi Adaptor", value: 'Wifi Adaptor'},
+          {label: "Extended Support", value: 'Extended Support'}
+        ];
+      }
+    }
+  },
+  ItemIsCompound:{
+    type: String,
+    label: "Compound Item?",
+    optional: false,
+    autoform: {
+      afFieldInput: {
+        type: "boolean-checkbox"
+      }
+    }
+  },
   memoField: {
     type: String,
     label: "Memo Field",
-    optional: false,
+    optional: true,
     max: 1000,
     autoform: {
       rows: 8
