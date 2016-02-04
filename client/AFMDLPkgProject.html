@@ -8,39 +8,28 @@
   {{> hello}}
 </body>
 
+
+
+
 <template name="hello">
-  <br><br><br><br>
-
+  
   {{#autoForm id="insertItemsForm" type="normal" schema=AdminSchemas.itemsSch}}
-
-<!--       {{> afQuickField name='ItemCode' mdltheme="Floating" mdlthemelabel="Item Code"}}
-      <br><br>
-      {{> afQuickField name='ItemName' mdltheme="Normal" mdlthemelabel="Item Name"}}
-      <br><br>
- -->
-
-
       {{> afQuickField name='ItemCode' mdltheme="Floating"}}
       <br><br>
       {{> afQuickField name='ItemName' mdltheme="Normal"}}
       <br><br>
-
       {{> afQuickField name='ItemDeliverToHome' mdltheme="Hover"}}
       <br><br>
       {{> afQuickField name='ItemDeliverExtras'}}
       <br><br>
       {{> afQuickField name='ItemIsCompound'}}
-      
-      
       {{> afQuickField name='memoField' mdltheme=''}}
       
       <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" type="submit">Save</button>      
   {{/autoForm}}
-  <br><br><br><br><br><br>
-
+  <br><br><br><br>
 
   {{> quickForm id="insertItemsForm2" schema=AdminSchemas.itemsSch fields="ItemCode,ItemName"}}
-  <br><br><br><br><br><br>
-
+  <br><br><br><br>
 
 </template>
