@@ -1,24 +1,24 @@
 <head>
-  <title>AFMDLPkgProject</title>
+  <title>AutoForm Google MDL Test Project</title>
 </head>
 
 <body>
-  <h3>AFMDL Test</h3>
+  <p><b>Meteor AutoForm Google MDL Test Project</b></p>
 
-  {{> hello}}
+  {{> testForm}}
 </body>
 
 
 
 
-<template name="hello">
-  
+<template name="testForm">
+
   {{#autoForm id="insertItemsForm" type="normal" schema=AdminSchemas.itemsSch}}
-      {{> afQuickField name='ItemCode' mdltheme="Floating"}}
+      {{> afQuickField name='ItemCode' mdltheme="floating"}}
       <br><br>
-      {{> afQuickField name='ItemName' mdltheme="Normal"}}
+      {{> afQuickField name='ItemName' mdltheme="default"}}
       <br><br>
-      {{> afQuickField name='ItemDeliverToHome' mdltheme="Hover"}}
+      {{> afQuickField name='ItemDeliverToHome'}}
       <br><br>
       {{> afQuickField name='ItemDeliverExtras'}}
       <br><br>

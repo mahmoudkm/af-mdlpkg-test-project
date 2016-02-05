@@ -1,20 +1,14 @@
+
+
 Items = new Mongo.Collection('items');
 
-// Items.helpers({
-
-// });
-
-// Items.before.insert(function (userId, doc) {
-//   doc.createdAt = moment().toDate();
-// });
-
-
+//=====================================================================
 
 
 this.AFormMDLTestGlobalObj = {};
 
-this.AFormMDLTestGlobalObj.itemsSch = new SimpleSchema({    
-  
+
+this.AFormMDLTestGlobalObj.itemsSch = new SimpleSchema({      
   ItemCode: {
     type: String,
     label: "Item Code"
@@ -73,5 +67,5 @@ this.AFormMDLTestGlobalObj.itemsSch = new SimpleSchema({
       rows: 8
     }
   }
-
 });
+
